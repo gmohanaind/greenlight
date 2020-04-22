@@ -1,31 +1,82 @@
-<%
-# BigBlueButton open source conferencing system - http://www.bigbluebutton.org/.
-# Copyright (c) 2018 BigBlueButton Inc. and by respective authors (see below).
-# This program is free software; you can redistribute it and/or modify it under the
-# terms of the GNU Lesser General Public License as published by the Free Software
-# Foundation; either version 3.0 of the License, or (at your option) any later
-# version.
-#
-# BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
-# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
-# You should have received a copy of the GNU Lesser General Public License along
-# with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
-%>
+<div class="hero-anime">
 
-<div class="background">
-  <div class="container pt-9 pb-8">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 text-center">
-        <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
-        <p class="lead offset-lg-2 col-lg-8 col-sm-12 "><%= t("landing.about", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %></p>
-        <%= link_to "https://youtu.be/Hso8yLzkqj8", target: "_blank" do %>
-          <h4><%= t("landing.video") %> <i class="far fa-play-circle ml-1"></i></h4>
-        <% end %>
-      </div>
-
-    </div>
-  </div>
+   
+    <div class="section full-height">
+        <div class="absolute-center">
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-white">
+								<span>Virtual</span>
+								<span>Classroom</span>
+								<span> software</span>
+								<span> for </span>
+								<span>Live </span>
+								<span>interactive</span>
+								<span> online</span>
+								<span> classes </span>
+							</h1>
+							<br>
+                            <p class="f-s-18 text-center tagslogan text-white"> Keep students very focused and engaged in with high quality audio, video and suite of collaborative tools </p>
+                        </div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>			
+	<div class="d-flex justify-content-center">
+					
+					<div class="services-2">
+						<div class="icon-div">
+							<%= image_tag("icons/black/webcam.svg", :class => "f-icons") %>							
+							<p class="f-s-18 f-text"> Webcams</h4>
+						</div>
+					</div>
+					<div class="services-2">
+						<div class="icon-div">
+							<%= image_tag("icons/black/audio.svg", :class => "f-icons") %>	
+							<p class="f-s-18 f-text"> Audio </h4>
+						</div>
+					</div>
+				
+					<div class="services-2">
+						<div class="icon-div">
+							<%= image_tag("icons/black/screen-share.svg", :class => "f-icons") %>
+							<p class="f-s-18 f-text"> Screen Sharing </h4>
+						</div>
+					</div>
+					<div class="services-2">
+						<div class="icon-div">
+							<%= image_tag("icons/black/meeting-room.svg", :class => "f-icons") %>	
+							<p class="f-s-18 f-text"> Meeting Room</h4>
+						</div>
+					</div>
+					<div class="services-2">
+						<div class="icon-div px-0">
+							<%= image_tag("icons/black/white-board.svg", :class => "f-icons") %>	
+							<p class="f-s-18 f-text"> Multi-User Whiteboard </h4>
+						</div>
+					</div>
+					<div class="services-2">
+						<div class="icon-div">
+							<%= image_tag("icons/black/polling.svg", :class => "f-icons") %>
+							<p class="f-s-18 f-text"> Quiz </h4>
+						</div>
+					</div>
+				
+					<div class="services-2">
+						<div class="icon-div">
+							<%= image_tag("icons/black/chat.svg", :class => "f-icons") %>
+							<p class="f-s-18 f-text"> Chat</h4>
+						</div>
+					</div>
+						<div class="services-2">
+						<div class="icon-div">
+							<%= image_tag("icons/black/emojis.svg", :class => "f-icons") %>	
+							<p class="f-s-18 f-text"> Emojis </h4>
+						</div>
+					</div>
+			</div>
+   
 </div>
-
-<%= render "main/components/features" %>
